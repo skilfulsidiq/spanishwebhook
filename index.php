@@ -33,7 +33,7 @@ if($json = json_decode(file_get_contents("php://input"), true)){
 // print_r($answers);
 header('Content-Type: application/json; charset=utf-8');
 $answers= $data->form_response->answers;
-echo json_encode($data);
+return json_encode($data);
   // $app['monolog']->addDebug('logging output.');
   // return $app['twig']->render('index.twig');
 });
