@@ -1,10 +1,10 @@
 <?php
 
 require('./vendor/autoload.php');
+require './helpers/curlapi.php';
 
 $app = new Silex\Application();
 $app['debug'] = true;
-
 // Register the monolog logging service
 $app->register(new Silex\Provider\MonologServiceProvider(), array(
   'monolog.logfile' => 'php://stderr',
@@ -21,22 +21,52 @@ $app->get('/', function() use($app) {
   return $app['twig']->render('index.twig');
 });
 $app->post('/', function() use($app) {
-  
-header('Content-Type: application/json');
-$request = file_get_contents('php://input');
-$req_dump = print_r( $request, true );
-$fp = file_put_contents( 'request.log', $req_dump );
+ 
+// header('Content-Type: application/json');
+// $request = file_get_contents('php://input');
+
 
 // Updated Answer
-if($json = json_decode(file_get_contents("php://input"), true)){
-   $data = $json;
+if($request = json_decode(file_get_contents("php://input"), true)){
+  $req_dump = print_r( $request, true );
+$fp = file_put_contents( 'request.log', $req_dump );
+   $data = $request;
 }
-// $data = json_decode(file_get_contents('php://input'));
-// $answers = $data->form_response->answers;
-// print_r($answers);
-header('Content-Type: application/json; charset=utf-8');
-// $answers= $data->form_response->answers;
-return json_encode($data);
+$fields = $data['form_response']['definition']['fields'];
+$answers= $data['form_response']['answers'];
+$structured = [];
+  $amount = $answers[1]["choice"]["label"];
+  $lastname =  $answers[2]["text"];
+  $phone =  $answers[3]["phone_number"];
+  $email =  $answers[4]["email"];
+
+  $form_params = [
+    "LastName"=>$lastname,
+    "Email"=>$email,
+    "HomePhone"=> $phone,
+    "TotalDebt"=>$amount
+  ];
+
+  
+  
+  try {
+
+
+    $make_call = callAPI('POST', 'https://unitedsettlement.secure.force.com/portal/services/apexrest/postJSON', json_encode($form_params));
+    $response = json_decode($make_call, true);
+    $errors   = $response['response']['errors'];
+    $data     = $response['response']['data'];
+
+    return json_encode($response);
+
+  } catch (\Exception $th) {
+    //throw $th;
+
+    // $err = $th->getResponse()->getBody(true)->getContents();
+    // app['monolog']->addDebug($err);
+    return json_dncode($th->getMessage());
+  }
+
   
 });
 
