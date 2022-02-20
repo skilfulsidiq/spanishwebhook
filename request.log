@@ -1,49 +1,25 @@
 Array
 (
-    [event_id] => 01FWB4RV15HEXXYMVCZZZXBCPD
+    [event_id] => 01FW6X5T4K64D8GZ770167MAA3
     [event_type] => form_response
     [form_response] => Array
         (
-            [form_id] => dYZLn02x
-            [token] => 01FWB4RV15HEXXYMVCZZZXBCPD
-            [landed_at] => 2022-02-20T08:43:02Z
-            [submitted_at] => 2022-02-20T08:43:02Z
+            [form_id] => aMWVxWBk
+            [token] => s4pjhcetqyp8vt2ghtwas4pjhce3gm13
+            [landed_at] => 2022-02-18T16:33:49Z
+            [submitted_at] => 2022-02-18T17:13:20Z
             [definition] => Array
                 (
-                    [id] => dYZLn02x
-                    [title] => Sidtrix Training Form
+                    [id] => aMWVxWBk
+                    [title] => United
                     [fields] => Array
                         (
                             [0] => Array
                                 (
-                                    [id] => DLNf8VXFhfcR
-                                    [title] => Great, can we get your full name?
-                                    [type] => short_text
-                                    [ref] => ef34b985c51e4131
-                                    [properties] => Array
-                                        (
-                                        )
-
-                                )
-
-                            [1] => Array
-                                (
-                                    [id] => daxgJy7wwU48
-                                    [title] => And what's your email address?
-                                    [type] => email
-                                    [ref] => 0c3cabd70157cf16
-                                    [properties] => Array
-                                        (
-                                        )
-
-                                )
-
-                            [2] => Array
-                                (
-                                    [id] => qiKX1gGqMVCC
-                                    [title] => Are you planning on staying for the afterparty?
-                                    [type] => picture_choice
-                                    [ref] => 7207397713e2b5e3
+                                    [id] => LOUibdye5THb
+                                    [title] => ¿Tienes una deuda de Tarjeta de Crédito o Préstamo?
+                                    [type] => multiple_choice
+                                    [ref] => 01FSASYWV6KAZDPND3W3AXCNPD
                                     [properties] => Array
                                         (
                                         )
@@ -52,26 +28,84 @@ Array
                                         (
                                             [0] => Array
                                                 (
-                                                    [id] => 5gGAGJ8TLrQN
-                                                    [label] => Yes
+                                                    [id] => 0JvwF3JfQC3z
+                                                    [label] => Si
                                                 )
 
                                             [1] => Array
                                                 (
-                                                    [id] => Df8u4FV2M5S8
+                                                    [id] => zkSPlJzT1Pfj
                                                     [label] => No
+                                                )
+
+                                            [2] => Array
+                                                (
+                                                    [id] => mkDLYjjxKBq7
+                                                    [label] => Otro tipo de deuda
                                                 )
 
                                         )
 
                                 )
 
+                            [1] => Array
+                                (
+                                    [id] => OFX45jj34apO
+                                    [title] => ¿Cúanto Debes?
+                                    [type] => dropdown
+                                    [ref] => 6ee2e524-efd4-40ad-9dd6-a77ba311f698
+                                    [properties] => Array
+                                        (
+                                        )
+
+                                    [choices] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => aSHJL57ZIJcs
+                                                    [label] => Menos de $5 mil dólares
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [id] => 1tMSZCrBHPiR
+                                                    [label] => Entre $5mil y $10 mil dólares
+                                                )
+
+                                            [2] => Array
+                                                (
+                                                    [id] => hzdoOY5lrMwo
+                                                    [label] => Entre $10 mil y $20 mil dólares
+                                                )
+
+                                            [3] => Array
+                                                (
+                                                    [id] => eggsXr4TELSf
+                                                    [label] => Más de $20 mil dolares
+                                                )
+
+                                        )
+
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => EVoTNpDfkAGM
+                                    [title] => Cual es tu Nombre
+                                    [type] => short_text
+                                    [ref] => 135b19a3-99d7-42d1-8ad2-785c80e33ff9
+                                    [properties] => Array
+                                        (
+                                        )
+
+                                )
+
                             [3] => Array
                                 (
-                                    [id] => 6Ar21ZRkd0zG
-                                    [title] => And do you have any food allergies we should know about?
-                                    [type] => short_text
-                                    [ref] => 9aaaeeebe70858c4
+                                    [id] => FT9O5eeeByez
+                                    [title] => Cual es tu Número de teléfono
+                                    [type] => phone_number
+                                    [ref] => 95766d0d-2e54-45ab-8e63-eebf728d9154
                                     [properties] => Array
                                         (
                                         )
@@ -80,53 +114,12 @@ Array
 
                             [4] => Array
                                 (
-                                    [id] => ZIdt2FyR0WFB
-                                    [title] => Any questions about the event?
-                                    [type] => long_text
-                                    [ref] => 18842abd9aa9ded4
+                                    [id] => bqkdcaZdSE1l
+                                    [title] => Tu email?
+                                    [type] => email
+                                    [ref] => a924bdc1-c720-4039-9fd1-d7cbd8c9b2d4
                                     [properties] => Array
                                         (
-                                        )
-
-                                )
-
-                            [5] => Array
-                                (
-                                    [id] => tMPOQCDIMJ0i
-                                    [title] => And finally, would you mind telling us how you heard about the FormConf?
-                                    [type] => multiple_choice
-                                    [allow_other_choice] => 1
-                                    [ref] => 261d0775b1f029cb
-                                    [properties] => Array
-                                        (
-                                        )
-
-                                    [choices] => Array
-                                        (
-                                            [0] => Array
-                                                (
-                                                    [id] => WdDbqBVwzyWx
-                                                    [label] => Social media
-                                                )
-
-                                            [1] => Array
-                                                (
-                                                    [id] => liQEdEvOxgut
-                                                    [label] => Google
-                                                )
-
-                                            [2] => Array
-                                                (
-                                                    [id] => arGFbWBXcKRT
-                                                    [label] => Local advertising
-                                                )
-
-                                            [3] => Array
-                                                (
-                                                    [id] => t3vv6CAl6Htl
-                                                    [label] => From a friend
-                                                )
-
                                         )
 
                                 )
@@ -139,86 +132,73 @@ Array
                 (
                     [0] => Array
                         (
-                            [type] => text
-                            [text] => Lorem ipsum dolor
+                            [type] => choice
+                            [choice] => Array
+                                (
+                                    [label] => Si
+                                )
+
                             [field] => Array
                                 (
-                                    [id] => DLNf8VXFhfcR
-                                    [type] => short_text
-                                    [ref] => ef34b985c51e4131
+                                    [id] => LOUibdye5THb
+                                    [type] => multiple_choice
+                                    [ref] => 01FSASYWV6KAZDPND3W3AXCNPD
                                 )
 
                         )
 
                     [1] => Array
                         (
-                            [type] => email
-                            [email] => an_account@example.com
+                            [type] => choice
+                            [choice] => Array
+                                (
+                                    [label] => Entre $5mil y $10 mil dólares
+                                )
+
                             [field] => Array
                                 (
-                                    [id] => daxgJy7wwU48
-                                    [type] => email
-                                    [ref] => 0c3cabd70157cf16
+                                    [id] => OFX45jj34apO
+                                    [type] => dropdown
+                                    [ref] => 6ee2e524-efd4-40ad-9dd6-a77ba311f698
                                 )
 
                         )
 
                     [2] => Array
                         (
-                            [type] => choice
-                            [choice] => Array
-                                (
-                                    [label] => Barcelona
-                                )
-
+                            [type] => text
+                            [text] => AbogadosNow
                             [field] => Array
                                 (
-                                    [id] => qiKX1gGqMVCC
-                                    [type] => picture_choice
-                                    [ref] => 7207397713e2b5e3
+                                    [id] => EVoTNpDfkAGM
+                                    [type] => short_text
+                                    [ref] => 135b19a3-99d7-42d1-8ad2-785c80e33ff9
                                 )
 
                         )
 
                     [3] => Array
                         (
-                            [type] => text
-                            [text] => Lorem ipsum dolor
+                            [type] => phone_number
+                            [phone_number] => +18445456584
                             [field] => Array
                                 (
-                                    [id] => 6Ar21ZRkd0zG
-                                    [type] => short_text
-                                    [ref] => 9aaaeeebe70858c4
+                                    [id] => FT9O5eeeByez
+                                    [type] => phone_number
+                                    [ref] => 95766d0d-2e54-45ab-8e63-eebf728d9154
                                 )
 
                         )
 
                     [4] => Array
                         (
-                            [type] => text
-                            [text] => Lorem ipsum dolor
+                            [type] => email
+                            [email] => test@abogadosnow.com
                             [field] => Array
                                 (
-                                    [id] => ZIdt2FyR0WFB
-                                    [type] => long_text
-                                    [ref] => 18842abd9aa9ded4
-                                )
-
-                        )
-
-                    [5] => Array
-                        (
-                            [type] => choice
-                            [choice] => Array
-                                (
-                                    [label] => Barcelona
-                                )
-
-                            [field] => Array
-                                (
-                                    [id] => tMPOQCDIMJ0i
-                                    [type] => multiple_choice
-                                    [ref] => 261d0775b1f029cb
+                                    [id] => bqkdcaZdSE1l
+                                    [type] => email
+                                    [ref] => a924bdc1-c720-4039-9fd1-d7cbd8c9b2d4
                                 )
 
                         )

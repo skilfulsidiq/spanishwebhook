@@ -54,8 +54,8 @@ $structured = [];
 
     $make_call = callAPI('POST', 'https://unitedsettlement.secure.force.com/portal/services/apexrest/postJSON', json_encode($form_params));
     $response = json_decode($make_call, true);
-    $errors   = $response['response']['errors'];
-    $data     = $response['response']['data'];
+    // $errors   = $response['response']['errors'];
+    // $data     = $response['response']['data'];
 
     return json_encode($response);
 
