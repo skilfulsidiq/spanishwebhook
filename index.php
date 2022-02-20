@@ -12,12 +12,15 @@ $app->register(new Silex\Provider\MonologServiceProvider(), array(
 
 // Register view rendering
 $app->register(new Silex\Provider\TwigServiceProvider(), array(
-    'twig.path' => __DIR__.'/views',
+    'twig.path' => __DIR__.'/web/views',
 ));
 
 // Our web handlers
-
 $app->get('/', function() use($app) {
+  $app['monolog']->addDebug('logging output.');
+  return $app['twig']->render('index.twig');
+});
+$app->post('/', function() use($app) {
   
 header('Content-Type: application/json');
 $request = file_get_contents('php://input');
@@ -34,8 +37,7 @@ if($json = json_decode(file_get_contents("php://input"), true)){
 header('Content-Type: application/json; charset=utf-8');
 // $answers= $data->form_response->answers;
 return json_encode($data);
-  // $app['monolog']->addDebug('logging output.');
-  // return $app['twig']->render('index.twig');
+  
 });
 
 $app->run();
